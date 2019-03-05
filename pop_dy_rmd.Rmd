@@ -1,0 +1,33 @@
+---
+title: "pop_dy_rmd"
+author: "Katherine Rose Wolf"
+date: "March 4, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+We want to simpuate a basic population dynamics process.
+
+$$X_{t+1} = X_t + r X_t \left(1 - \frac{X_t}{K} \right)$$}
+```{r cars}
+x0 <- 10
+r <- 1
+K <- 100
+x1 <- x0 + r * x0 * (1 - x0 / K)
+x2 <- x1 + r * x1 * (1 - x1 / K)
+x2
+```
+
+
+```{r}
+t_max <- 100
+for(t in 1:t_max){
+  
+  
+}
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
